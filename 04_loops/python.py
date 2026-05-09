@@ -12,7 +12,12 @@ def exp_enumerate(array: list):
         print(idx, " ", value)
         
 #zip
-names = ["Alice", "Bob"]
-scores = [85, 90]
-for name, score in zip(names, scores):
-    print(f"{name}: {score}")
+def generate_score_report(names, scores):
+    return [f"{name} --> {score}" for name, score in zip(names, scores)]
+
+# match case continue break loop_fallback_else 
+
+# walrus
+# (:=)
+
+# using dictionary over match case
